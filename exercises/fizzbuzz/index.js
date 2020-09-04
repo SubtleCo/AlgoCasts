@@ -12,6 +12,33 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+function fizzBuzz(n) {
+	for (let i = 1; i <= n; i++) {
+		let number = '';
+		if (i % 3 === 0) number += "fizz";
+		if (i % 5 === 0) number += "buzz";
+		console.log(number ? number : i)
+	}
+
+}
+
+// if the interviewer wants to see brutal logic
+
+// function fizzBuzz(n) {
+// 	for (let i = 1; i <= n; i++) {
+// 		if (i % 3 === 0 && i % 5 === 0) {
+// 			console.log("fizzbuzz");
+// 		} else if (i % 3 === 0) {
+// 			console.log("fizz");
+// 		} else if (i % 5 === 0) {
+// 			console.log("buzz");
+// 		} else {
+// 			console.log(i);
+// 		}
+// 	}
+// }
 
 module.exports = fizzBuzz;
+
+
+
