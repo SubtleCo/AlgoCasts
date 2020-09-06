@@ -7,6 +7,16 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+
+// ----- NOTES -----
+/* When using slice, you can exclude the closing variable and it'll just use the whole thing
+
+*/
+
+function capitalize(str) {
+	let arr = str.split(' ');
+	arr = arr.map(x => x[0].toUpperCase() + x.slice(1));
+	return arr.join(' ');
+}
 
 module.exports = capitalize;
