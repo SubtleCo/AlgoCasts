@@ -54,7 +54,7 @@ function matrix(n, arr = [], x = 0, y = 0, xBound = 0, yBound = 0, count = 1) {
 		x--;
 	}
 
-	//reverse col ( FIRST NEED OF BOUNDS)
+	//reverse col 
 	x++;
 	y--;
 	while (y >= yBound) {
